@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+}
+.section{
+    background-image: linear-gradient(to right,rgb(66, 79, 196), rgb(43, 55, 168));
+}
+
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+.menu{
+    display: flex;
+}
+
+.menu .side{
+    width: 50%;
+}
+.menu .navigation{
+    display: flex;
+    justify-content: end;
+}
+.menu .navigation a{
+    transition: 3s;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 20px 30px;
+}
+
+.menu .navigation a:hover{
+    transition: 1s;
+    background-color: rgb(13, 78, 56);
+    color: aliceblue;
+    text-shadow: 0 0 10px white;
+    box-shadow: 0 20px 0 rgb(13, 78, 56);
+}
+.imgscr img{
+    width: 1930px;
+    height: 800px;
+}
+.form h1{
+    text-align: center;
+}
+
+.tekst_sverhu_kartinki{        
+    position: absolute;       
+    top: 35%;       
+    right: 800px;     
+    text-transform: uppercase;       
+    color: rgb(13, 78, 56);       
+    width: 350px;              
+    text-align: center;
+    font: bold 40px/43px Helvetica, Sans-Serif;    
+}
+.tekst{        
+    position: absolute;       
+    top: 105%;       
+    right: 100px;
+    text-transform: uppercase;     
+    color: rgb(0, 0, 0);       
+    width: 900px;              
+    text-align: center;
+    font: bold 30px/30px Helvetica, Sans-Serif;    
+}
+.tekst_sverhu_kartinki{
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+.ttt{
+    position: absolute;       
+    top: 119%;       
+    right: 60px;
+    text-transform: uppercase;     
+    color: rgb(0, 0, 0);       
+    width: 900px;              
+    text-align: center;
+    font: bold 30px/30px Helvetica, Sans-Serif;
+}
+.section-cards .row{
+    display: flex;
+    justify-content: space-between;
+}
+.section-cards .row .card{
+    width: 30%;
+    height: 680px;
+    background-color: rgb(184, 218, 248);
+    box-shadow: 0 0 20px black;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.section-cards .row .card > *{
+    height: 50%;
+}
+.section-cards .row .card .card-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.section-cards .row .card .card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section-cards .row .card .card-info a{
+    justify-self: end;
+    align-self: flex-end;
+}

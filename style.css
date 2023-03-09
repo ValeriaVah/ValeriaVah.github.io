@@ -1,0 +1,88 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: url('https://aurora.fm/images/artists/889/1660916405.jpg');
+    background-size: cover;
+}
+.container{
+    width: 700px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.form{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+}
+.form h1{
+    text-align: center;
+}
+
+.form *{
+    margin-top: 10px;
+}
+.form input, .form button{
+    padding: 10px;
+}
+.form button{
+    transition: 2s;
+    align-self: center;
+    width: 50%;
+    border-radius: 10px;
+    background-color: crimson;
+    color: aliceblue;
+}
+
+.form button:hover{
+    transition: 1s;
+    background-color: coral(255,123,0);
+    color: aliceblue;
+    border-radius: 20px;
+}
+
+
+*{
+    box-sizing: border-box;
+    
+}
+
+.block{
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    width: calc(100%/3);
+    height: calc(100%/3);
+    background-color: mediumvioletred;
+    border: 2px solid black;
+}
+.item.big{
+    widht: calc(100%/3*2);
+}
+.inner{
+    width: 10%;
+    height: 10%;
+    background-color: brown;
+    border: 1px solid blue;
+}
+.item{
+    display: flex;
+}  
+.item:nth-child(1){
+    justify-content: center;
+    align-items: center;
+}
+.item:nth-child(2){
+    justify-content: end;
+    align-items: center;
+}
+.item:nth-child(3){
+    justify-content: space-between;
+    align-items: end;
+}

@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+}
+.section{
+    background-image: linear-gradient(to right,rgb(230, 133, 193), rgb(230, 133, 193));
+}
+
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+.menu{
+    display: flex;
+}
+
+.menu .side{
+    width: 50%;
+}
+.menu .navigation{
+    display: flex;
+    justify-content: end;
+}
+.menu .navigation a{
+    transition: 3s;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 20px 30px;
+}
+
+.menu .navigation a:hover{
+    transition: 1s;
+    background-color: rgb(255,0,195);
+    color: aliceblue;
+    text-shadow: 0 0 10px white;
+    box-shadow: 0 20px 0 rgb(255,0,195);
+}
+.section-cards .row{
+    display: flex;
+    justify-content: space-between;
+}
+.section-cards .row .card{
+    width: 30%;
+    height: 500px;
+    background-color: aliceblue;
+    box-shadow: 0 0 20px black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.section-cards .row .card > *{
+    height: 50%;
+}
+.section-cards .row .card .card-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.section-cards .row .card .card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section-cards .row .card .card-info a{
+    justify-self: end;
+    align-self: flex-end;
+}
+
+.row{
+    display: flex;
+}
+ 
+.section-advantages{
+    display: flex;
+
+}
+.section-advantages .wrapper{
+    display: flex;
+    width: 50%;
+    height: 80vh;
+
+}
+
+.section-advantages .wrapper{
+    display: flex;
+    width: 50%;
+    height: 80vh;
+    flex-wrap: wrap;
+}
+.section-advantages .wrapper .image-bg{
+    width: 50%;
+    height: 50%;
+    color:black
+}
+.section-advantages .wrapper:last-child{
+    flex-direction: column;
+}
+.section-advantages .wrapper .image-bg.h-100{
+    height: 100%;
+}
+.section-advantages .wrapper:nth-child(1) .image-bg:nth-child(1){
+    background: url("https://biographe.ru/wp-content/uploads/2021/05/234234-25.jpg");
+    background-size: cover;    
+}
+.section-advantages .wrapper:nth-child(1) .image-bg:nth-child(2){
+    background: url("https://gitarshkola.net/wp-content/uploads/2021/03/mejbi-bejbi.jpg?v=1615455549");
+    background-size: cover;    
+}
+.section-advantages .wrapper:nth-child(1) .image-bg:nth-child(3){
+    background: url("https://avatars.yandex.net/get-music-content/6202531/307a55a2.p.6019372/m1000x1000");
+    background-size: cover; 
+}
+.section-advantages .wrapper:nth-child(1) .image-bg:nth-child(4){
+    background: url("https://e.snmc.io/i/600/s/dcf375061599b412de164df8cb4145b0/9713496/%D0%BC%D1%8D%D0%B9%D0%B1%D0%B8-%D0%B1%D1%8D%D0%B9%D0%B1%D0%B8-meybi-beybi-sh1pu4ka-Cover-Art.jpg");
+    background-size: cover; 
+}
+.section-advantages .wrapper:nth-child(2) .image-bg:nth-child(1){
+    background: url("https://s.ura.news/1200_1200/images/news/upload/news/561/525/1052561525/6376b03cf1382008e8f7671f2ae923f0_250x0_1280.994.0.0.jpg");
+    background-size: cover; 
+}
+.section-advantages .wrapper:nth-child(2) .image-bg:nth-child(2){
+    background: url("https://i.pinimg.com/736x/d7/ca/ff/d7caff364dfd4331f69f5bb97cc96a55.jpg");
+    background-size: cover; 
+}
+.section-advantages .wrapper:nth-child(2) .image-bg:nth-child(3){
+    background: url("https://uznayvse.ru/images/catalog/2023/1/maybe-baby_26.jpg");
+    background-size: cover; 
+}
+
+
+.section-advantages .wrapper .image-bg .color-bg{
+    transition: 2s;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(230, 133, 193, 0.658) , rgba(24, 83, 138, 0.637));
+    text-align: center;
+    color: aliceblue;
+}
+.section-advantages .wrapper .image-bg:hover .color-bg{
+    transition: 1.6s;
+    opacity: 1;
+}
+
+
+.section-slider{
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+.section-slider .hider{
+    width: 100%;
+    height: 100%;
+}
+.section-slider .hider .images{
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slider-animation 10s infinite;
+
+}
+.section-slider .hider .images img{
+    width: calc(100%/3);
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes slider-animation{
+    0%{
+    }
+    20%{
+        transform: translateX(calc(-100%/3));
+    }
+    50%{
+        transform: translateX(calc(-100%/3*2));
+    }
+    75%{
+        transform: translateX(calc(-100%/3));
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
